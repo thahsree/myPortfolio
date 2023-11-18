@@ -186,10 +186,13 @@ main img{
     align-items: center;
 }
 .project{
+    text-align: center;
+    font-family: roboto;
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 50%;
+    height: 60%;
+    line-height: 2rem;
 }
 .projects .project1,
 .projects .project2,
