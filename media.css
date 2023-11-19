@@ -4,13 +4,14 @@
       display: none;
   }
   .mobileScreen{
+      border-bottom: 1px solid var(--BORDER);
       display: flex;
       flex-direction: column;
       align-items: end;
+      padding: 1rem;
   }
   .mobileScreen_nav{
       align-items: center;
-      height: 20rem;
       width: 100%;
       display: none;
       justify-content: center;
@@ -27,9 +28,17 @@
       width: 100%;
       border: 1px solid var(--BORDER);
   }
-  .mobileScreen_nav ul a{
+  .mobileScreen_nav ul a:any-link{
       text-decoration: none;
       line-height: 5rem;
+      color: var(--COLOR);
+      font-family: roboto;
+      transition: .5s ease-in-out;
+  }
+  .mobileScreen_nav a:hover,
+  .mobileScreen_nav a:focus,
+  .active{
+    font-size: 1.2rem;
   }
   .menu-button{
       background-color: transparent;
@@ -64,7 +73,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: auto;
+    justify-content: center;
+    height: 60vh;
   }
   .home_content{
     display: flex;
@@ -126,8 +136,50 @@
           transform: scaleY(1);
       }
   }
+  .about{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+.about h2{
+    
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 0px 0px 3px;
+    
+
+}
+.about_text{
+    font-family: roboto;
+    width: 80%;
+    line-height: 3rem;
+    text-shadow: 0px 0px 1px;
+}
+.about_text p::selection{
+    background:rgb(5, 85, 85);
+    color: rgb(0, 0, 0);
+}
+.projects{
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+}
+.project{
+  width: 80%;
+  height: 100%;
+
+  margin-bottom: 2rem;
+  font-size: 10px;
+}
+.project h1{
+  padding: 0px;
+  font-size: 10px;
+}
   
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .description {
