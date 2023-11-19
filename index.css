@@ -102,7 +102,7 @@ main img{
 .img{
     width: 50%;
 }
-.about{
+.about, .skills{
     display: flex;
     padding: 2rem;
     flex-direction: column;
@@ -113,12 +113,11 @@ main img{
     text-align: center;
     padding: 2rem;
     text-shadow: 0px 0px 3px;
-    
 
 }
-.about_text{
+.about_text {
     font-family: roboto;
-    width: 50%;
+    width: 80%;
     line-height: 3rem;
     text-shadow: 0px 0px 1px;
 }
@@ -148,7 +147,6 @@ main img{
     display: flex;
     flex-direction: column;
     width: 20%;
-
     align-items: center;
     padding: 1rem;
     gap: 1rem;
@@ -233,4 +231,20 @@ main img{
 }
 .mobileScreen{
     display: none;
+}
+.mobileScreen_nav{
+    display: none;
+}
+.skills_text{
+    display: flex;
+    width: 80%;
+}
+.skills ul li{
+    cursor: pointer;
+    border: none;
+    border-radius: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+    background-color: rgba(250, 249, 249, 0.174)
 }

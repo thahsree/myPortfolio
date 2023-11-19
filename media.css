@@ -194,4 +194,9 @@
   .description .work{
     font-size: .8rem;
   }
+  .skills ul li{
+    font-size: 8px;
+    margin: .5rem;
+    padding: .5rem;
+  }
 } 
