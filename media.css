@@ -176,8 +176,26 @@
   padding: 0px;
   font-size: 10px;
 }
-  
+.Simple_Project{
+  flex-direction: column;
+  width: 100%;
 }
+.Simple_Project .calci{
+  width: 70%;
+}
+.Simple_Project .calci h2{
+  font-size: 1rem;
+}
+.Simple_Project h1{
+  display: flex;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.project_h1{
+  display: none;
+}
+}
+
 
 
 
