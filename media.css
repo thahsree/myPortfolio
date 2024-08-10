@@ -6,14 +6,19 @@
   .mobileScreen{
       border-bottom: 1px solid var(--BORDER);
       display: flex;
+      position: fixed;
       flex-direction: column;
       align-items: end;
       padding: 1rem;
+      z-index: 1000;
   }
   .mobileScreen_nav{
       align-items: center;
       width: 100%;
       display: none;
+      position: fixed;
+      z-index: 100;
+      background-color: #000000;
       justify-content: center;
   }
   .mobileScreen_nav ul{
@@ -164,6 +169,7 @@
   height: 180vh;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap; /* Allow items to wrap onto the next line */
 }
 .project{
   width: 80%;
