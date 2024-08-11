@@ -189,7 +189,7 @@
 }
 .project h1{
   padding: 0px;
-  font-size: 10px;
+  font-size: 5px;
 }
 .Simple_Project{
   flex-direction: column;
@@ -206,9 +206,7 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-.project_h1{
-  display: none;
-}
+
 .calci{
   margin-top: 4rem;
 }
@@ -219,6 +217,22 @@
 
 @media only screen and (max-width: 600px) {
 
+  .skills{
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    gap: 10px;
+  }
+  .projects content{
+    padding: 0;
+    margin: 0;
+  }
+  .Simple_Project{
+    margin-top: 0px;
+  }
+  .project h1, .calci h2{
+    font-size: 17px !important;
+  }
   .description {
     display: flex;
     padding: 0;
