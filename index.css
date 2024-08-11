@@ -91,6 +91,9 @@ main img{
     display: flex;
     width: 100%;
 }
+.header{
+    position: relative;
+}
 .description{
     display: flex;
     flex-direction: column;

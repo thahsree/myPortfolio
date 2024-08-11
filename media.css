@@ -3,6 +3,7 @@
   .largeScreen{
       display: none;
   }
+ 
   .mobileScreen{
       border-bottom: 1px solid var(--BORDER);
       display: flex;
@@ -10,14 +11,18 @@
       flex-direction: column;
       align-items: end;
       padding: 1rem;
-      z-index: 1000;
+      z-index: 100;
+      background-color: #000000;
+     
+
   }
   .mobileScreen_nav{
+      position: absolute;
+      top: 70px;
       align-items: center;
       width: 100%;
       display: none;
       position: fixed;
-      z-index: 100;
       background-color: #000000;
       justify-content: center;
   }
@@ -110,20 +115,24 @@
       transform: translate(-20px , 12px);
   }
   
-  :is(header:hover , header:focus-within) .menu-icon{
+  header.menu-active .menu-icon {
       background-color: transparent;
       /* transform: rotate(360deg);   if we want hamburger rotation*/
   }
-  :is(header:hover , header:focus-within) .menu-icon::before{
+  
+  header.menu-active .menu-icon::before {
       transform: translateX(-20px) rotate(45deg);
   }
-  :is(header:hover , header:focus-within) .menu-icon::after{
+  
+  header.menu-active .menu-icon::after {
       transform: translateX(-20px) rotate(-45deg);
   }
-  :is(header:hover , header:focus-within) nav {
+  
+  header.menu-active nav {
       display: flex;
   }
-  nav{
+  
+  nav {
       background-color: var(--HEADER-BGCOLOR);
       display: none;
       transform-origin: top center;
@@ -209,11 +218,20 @@
 
 
 @media only screen and (max-width: 600px) {
+
   .description {
     display: flex;
     padding: 0;
+    margin: 0;
     justify-content: center;
     font-size: .6rem;
+  }
+  .about h2{
+    font-size: 1.2rem;
+  }
+  .about_text{
+    padding: 0px;
+    font-size: .8rem;
   }
   .description .name{
     font-size: 2rem;
@@ -225,5 +243,9 @@
     font-size: 13px;
     margin: .5rem;
     padding: .6rem;
+  }
+  .tools img{
+    width: 20px;
+    height: 20px;
   }
 } 
