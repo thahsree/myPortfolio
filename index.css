@@ -216,7 +216,8 @@ main img{
 .projects .project1,
 .projects .project2,
 .projects .project3,
-.projects .project4{
+.projects .project4,
+.projects .project5{
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -225,7 +226,8 @@ main img{
 .projects .project1:hover,
 .projects .project2:hover,
 .projects .project3:hover,
-.projects .project4:hover{
+.projects .project4:hover,
+.projects .project5:hover{
     box-shadow: 0px 0px 4px rgb(253, 252, 252);
     transform: scale(1.02);
 }
@@ -255,6 +257,12 @@ main img{
 .project4 {
     height: 100%;
     background-image: url('./images/netflix\ clone.png');
+    background-size: cover;
+    background-position: center;
+}
+.project5 {
+    height: 100%;
+    background-image: url('./images/tourism.png');
     background-size: cover;
     background-position: center;
 }
@@ -290,7 +298,7 @@ main img{
     justify-content: space-evenly;
     align-items: center;
 }
-.Simple_Project .calci img{
+.Simple_Project .calci img {
     width: 100%;
     display: flex;
     border-radius: 0;
@@ -307,7 +315,10 @@ main img{
     flex-direction: column;
     justify-content: center;
 }
-.Simple_Project .calci img:hover{
+.tools p img{
+    transition : 0.5s ease-in-out;
+}
+.Simple_Project .calci img:hover ,.tools p img:hover{
     transform: scale(1.1);
     border: 1px solid var(--BORDER);
     box-shadow: 0px 0px 4px rgb(253, 252, 252);
@@ -339,4 +350,14 @@ footer{
     display: flex;
     align-items: end;
 
+    
+}
+.tools p , .calci.tools p{
+
+    padding: 10px;
+}
+.tools p img , .calci .tools p img{
+
+    cursor: pointer;
+    border-radius: 50%;
 }
