@@ -262,4 +262,14 @@
     width: 20px;
     height: 20px;
   }
+
+  .project h1{
+    line-height: 0;
+    margin: 7px;
+  }
+
+  .other-projects{
+    margin: 0;
+  }
+  
 } 
